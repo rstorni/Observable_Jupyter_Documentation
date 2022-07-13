@@ -61,7 +61,7 @@ html_static_path = ['_static']
 # -- Thumb Nails -------------------------------------------------------------
 nbsphinx_thumbnails = {
 	'Bar_Chart_Race': 'Images/Thumbnails/Embed-Demo2.png',
-	'Interactive_Map': 'Images/Thumbnails/Embedding_demo.png',
+	'Interactive_Map': 'Images/Thumbnails/Embedding_Demo.png',
 	'World_Choroplath_Map': 'Images/Thumbnails/World_Map_Demo.png',
 	'Linear_Regression': 'Images/Thumbnails/Linear_Regression.png',
 	'Variable_Regression': 'Images/Thumbnails/Variable_Regression.png',

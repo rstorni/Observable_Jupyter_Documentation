@@ -8,10 +8,8 @@ Special thanks to:
 
 * Mike Bostock
 
-* Fil
-
 * Thomas Ballinger
 
-* Proffesor Phillip Bogdan
+* Proffesor Phillip Bogden
 
 

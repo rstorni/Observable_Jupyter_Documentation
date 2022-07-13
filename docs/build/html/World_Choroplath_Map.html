@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>World Choroplath Map &mdash; Observable Jupyter 0.1 documentation</title>
+  <title>World Choropleth Map &mdash; Observable Jupyter 0.1 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
@@ -50,7 +50,7 @@
               <p class="caption" role="heading"><span class="caption-text">Popular Visualizations:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Brushable_scatterplot.html">Brushable ScatterPlot Matrix</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">World Choroplath Map</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">World Choropleth Map</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#Set-Up">Set Up</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#Load-and-Format-Data">Load and Format Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#Embed-your-data-into-the-visualization">Embed your data into the visualization</a></li>
@@ -59,27 +59,13 @@
 <li class="toctree-l1"><a class="reference internal" href="Bar_Chart_Race.html">Barchart Race</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="Understanding_the_Observable_in_OJ.html">Relating Observable to Observable-Jupyter</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Installation.html">Installing Observable-Jupyter</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Embedding_cells.html">Embedding Cells</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Using_your_own_data.html">Using your own data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Tutorial.html">Tutorial</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="Visualization_Library.html">Visualization Library</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="Visualization_Library.html#animations">Animations</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Visualization_Library.html#interactive">Interactive</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="Visualization_Library.html#maps">Maps</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">World Choroplath Map</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#Set-Up">Set Up</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#Load-and-Format-Data">Load and Format Data</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#Embed-your-data-into-the-visualization">Embed your data into the visualization</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Visualization_Library.html#analysis">Analysis</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="Visualization_Library.html">Visualization Library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Acknowledgement.html">Acknowledgement</a></li>
 </ul>
 
@@ -97,7 +83,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>World Choroplath Map</li>
+      <li>World Choropleth Map</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/World_Choroplath_Map.ipynb.txt" rel="nofollow"> View page source</a>
       </li>
@@ -385,13 +371,13 @@ div.rendered_html tbody tr:hover {
     text-align: unset;
 }
 </style>
-<section id="World-Choroplath-Map">
-<h1>World Choroplath Map<a class="headerlink" href="#World-Choroplath-Map" title="Permalink to this heading"></a></h1>
+<section id="World-Choropleth-Map">
+<h1>World Choropleth Map<a class="headerlink" href="#World-Choropleth-Map" title="Permalink to this heading"></a></h1>
 <section id="Set-Up">
 <h2>Set Up<a class="headerlink" href="#Set-Up" title="Permalink to this heading"></a></h2>
 <p>Before Starting make sure to have Observable-Jupyter and any other needed libraries installed in your local environment.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">observable_jupyter</span> <span class="kn">import</span> <span class="n">embed</span>
@@ -404,7 +390,7 @@ div.rendered_html tbody tr:hover {
 <section id="Load-and-Format-Data">
 <h2>Load and Format Data<a class="headerlink" href="#Load-and-Format-Data" title="Permalink to this heading"></a></h2>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Co2_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;Demo_data/2020_Co2_Emissions.csv&quot;</span><span class="p">,</span> <span class="n">index_col</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span>
@@ -412,7 +398,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Co2_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -420,7 +406,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
@@ -490,7 +476,7 @@ div.rendered_html tbody tr:hover {
 </div>
 <p>The following block of structures the data into a format accepted by Observable.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[40]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="n">Co2_df</span><span class="o">.</span><span class="n">to_json</span><span class="p">(</span><span class="n">orient</span><span class="o">=</span><span class="s2">&quot;records&quot;</span><span class="p">)</span>
@@ -503,7 +489,7 @@ div.rendered_html tbody tr:hover {
 </section>
 <section id="Embed-your-data-into-the-visualization">
 <h2>Embed your data into the visualization<a class="headerlink" href="#Embed-your-data-into-the-visualization" title="Permalink to this heading"></a></h2>
-<p>The Brushable ScatterPlot Matrix is made up of two <strong>cells</strong>:</p>
+<p>The World Choropleth Map is made up of two <strong>cells</strong>:</p>
 <ol class="arabic simple">
 <li><p><strong>key_2</strong> : acts as a legend for the map.</p></li>
 <li><p><strong>chart_2</strong> : contains the map.</p></li>
@@ -517,7 +503,7 @@ div.rendered_html tbody tr:hover {
 <li><p><strong>title</strong> : Title defines the title on the key</p></li>
 </ol>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[41]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">embed</span><span class="p">(</span>
@@ -589,7 +575,7 @@ body > .output-area > .output-body {
 </div>
 </a>
 
-    <iframe id="observable-embed-div-11162279745921044" sandbox="allow-scripts" style="overflow: auto; min-width: 100%; width: 0px;" frameBorder="0"></iframe>
+    <iframe id="observable-embed-div-16451503759226493" sandbox="allow-scripts" style="overflow: auto; min-width: 100%; width: 0px;" frameBorder="0"></iframe>
 </div>
 <script>
 var ObservableJupyterWrapper = (function (exports) {
@@ -3664,8 +3650,8 @@ window.addEventListener('unload', () => {
 });
 CLOSESCRIPT
 `.replace(/OPENSCRIPT/gi, '<sc' + 'ript>').replace(/CLOSESCRIPT/gi, '</sc' + 'ript>')
-document.getElementById('observable-embed-div-11162279745921044').srcdoc = iframeSrc;
-ObservableJupyterWrapper.listenToSize(document.getElementById('observable-embed-div-11162279745921044'));
+document.getElementById('observable-embed-div-16451503759226493').srcdoc = iframeSrc;
+ObservableJupyterWrapper.listenToSize(document.getElementById('observable-embed-div-16451503759226493'));
 </script></div>
 </div>
 <p><a class="reference external" href="Images/Thumbnails/World_Map_Demo.png">Images/Thumbnails/World_Map_Demo.png</a></p>

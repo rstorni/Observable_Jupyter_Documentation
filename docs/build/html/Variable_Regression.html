@@ -50,7 +50,7 @@
               <p class="caption" role="heading"><span class="caption-text">Popular Visualizations:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="Brushable_scatterplot.html">Brushable ScatterPlot Matrix</a></li>
-<li class="toctree-l1"><a class="reference internal" href="World_Choroplath_Map.html">World Choroplath Map</a></li>
+<li class="toctree-l1"><a class="reference internal" href="World_Choroplath_Map.html">World Choropleth Map</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Bar_Chart_Race.html">Barchart Race</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
@@ -390,7 +390,7 @@ div.rendered_html tbody tr:hover {
 <h2>Set Up<a class="headerlink" href="#Set-Up" title="Permalink to this heading"></a></h2>
 <p>Before Starting make sure to have Observable-Jupyter and any other needed libraries installed in your local environment.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">observable_jupyter</span> <span class="kn">import</span> <span class="n">embed</span>
@@ -404,7 +404,7 @@ div.rendered_html tbody tr:hover {
 <section id="Load-and-Format-Data">
 <h2>Load and Format Data<a class="headerlink" href="#Load-and-Format-Data" title="Permalink to this heading"></a></h2>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">penguins_data</span> <span class="o">=</span> <span class="n">load_penguins</span><span class="p">()</span>
@@ -413,7 +413,7 @@ div.rendered_html tbody tr:hover {
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
 </pre></div>
 </div>
 <div class="output_area rendered_html docutils container">
@@ -507,7 +507,7 @@ div.rendered_html tbody tr:hover {
 </div>
 <p>The following block of structures the data into a format accepted by Observable.</p>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="n">penguins_data</span><span class="o">.</span><span class="n">to_json</span><span class="p">(</span><span class="n">orient</span><span class="o">=</span><span class="s2">&quot;records&quot;</span><span class="p">)</span>
@@ -520,7 +520,7 @@ div.rendered_html tbody tr:hover {
 </section>
 <section id="Embed-your-data-into-the-visualization">
 <h2>Embed your data into the visualization<a class="headerlink" href="#Embed-your-data-into-the-visualization" title="Permalink to this heading"></a></h2>
-<p>The ScaterPlot With Scrub Filter visualization consists of three <strong>cells</strong>:</p>
+<p>The Various Forms of Regression visualization consists of three <strong>cells</strong>:</p>
 <ol class="arabic simple">
 <li><p><strong>Variable_Regression_Chart</strong> : Desplays the graph.</p></li>
 <li><p><strong>viewof type</strong> : Desplays the dropdown menue.</p></li>
@@ -534,7 +534,7 @@ div.rendered_html tbody tr:hover {
 <li><p><strong>groupings</strong> : set to the name of the column in your data that allows you to difrerentiate your data.</p></li>
 </ol>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">embed</span><span class="p">(</span>
@@ -605,7 +605,7 @@ body > .output-area > .output-body {
 </div>
 </a>
 
-    <iframe id="observable-embed-div-19172320810320032" sandbox="allow-scripts" style="overflow: auto; min-width: 100%; width: 0px;" frameBorder="0"></iframe>
+    <iframe id="observable-embed-div-11780631824675825" sandbox="allow-scripts" style="overflow: auto; min-width: 100%; width: 0px;" frameBorder="0"></iframe>
 </div>
 <script>
 var ObservableJupyterWrapper = (function (exports) {
@@ -3680,8 +3680,8 @@ window.addEventListener('unload', () => {
 });
 CLOSESCRIPT
 `.replace(/OPENSCRIPT/gi, '<sc' + 'ript>').replace(/CLOSESCRIPT/gi, '</sc' + 'ript>')
-document.getElementById('observable-embed-div-19172320810320032').srcdoc = iframeSrc;
-ObservableJupyterWrapper.listenToSize(document.getElementById('observable-embed-div-19172320810320032'));
+document.getElementById('observable-embed-div-11780631824675825').srcdoc = iframeSrc;
+ObservableJupyterWrapper.listenToSize(document.getElementById('observable-embed-div-11780631824675825'));
 </script></div>
 </div>
 <p><a class="reference external" href="Images/Thumbnails/Variable_Regression.png">Images/Thumbnails/Variable_Regression.png</a></p>

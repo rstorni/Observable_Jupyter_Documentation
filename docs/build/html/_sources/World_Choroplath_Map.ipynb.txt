@@ -5,7 +5,7 @@
    "id": "becbce2a-5e11-4416-af50-2b3b2fca7f24",
    "metadata": {},
    "source": [
-    "# World Choroplath Map"
+    "# World Choropleth Map"
    ]
   },
   {
@@ -26,7 +26,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 37,
+   "execution_count": 1,
    "id": "36cf7ab6",
    "metadata": {},
    "outputs": [],
@@ -48,7 +48,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 38,
+   "execution_count": 2,
    "id": "ba1040ac",
    "metadata": {},
    "outputs": [],
@@ -58,7 +58,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 39,
+   "execution_count": 3,
    "id": "972cb969-4660-48c8-8b34-b1d4437df11e",
    "metadata": {},
    "outputs": [
@@ -138,7 +138,7 @@
        "4       Angola  AGO  2020                            22198161"
       ]
      },
-     "execution_count": 39,
+     "execution_count": 3,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -157,7 +157,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 40,
+   "execution_count": 4,
    "id": "63f257c1-257d-4436-9478-0d35f05e1ae5",
    "metadata": {},
    "outputs": [],
@@ -181,7 +181,7 @@
    "id": "dc14b806-3d35-4770-ae54-84f945aababb",
    "metadata": {},
    "source": [
-    "The Brushable ScatterPlot Matrix is made up of two **cells**:\n",
+    "The World Choropleth Map is made up of two **cells**:\n",
     "\n",
     "1. **key_2** : acts as a legend for the map.\n",
     "2. **chart_2** : contains the map.\n",
@@ -197,7 +197,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 41,
+   "execution_count": 5,
    "id": "5d23c862",
    "metadata": {
     "tags": []
@@ -257,7 +257,7 @@
        "</div>\n",
        "</a>\n",
        "\n",
-       "    <iframe id=\"observable-embed-div-11162279745921044\" sandbox=\"allow-scripts\" style=\"overflow: auto; min-width: 100%; width: 0px;\" frameBorder=\"0\"></iframe>\n",
+       "    <iframe id=\"observable-embed-div-16451503759226493\" sandbox=\"allow-scripts\" style=\"overflow: auto; min-width: 100%; width: 0px;\" frameBorder=\"0\"></iframe>\n",
        "</div>\n",
        "<script>\n",
        "var ObservableJupyterWrapper = (function (exports) {\n",
@@ -3332,8 +3332,8 @@
        "});\n",
        "CLOSESCRIPT\n",
        "`.replace(/OPENSCRIPT/gi, '<sc' + 'ript>').replace(/CLOSESCRIPT/gi, '</sc' + 'ript>')\n",
-       "document.getElementById('observable-embed-div-11162279745921044').srcdoc = iframeSrc;\n",
-       "ObservableJupyterWrapper.listenToSize(document.getElementById('observable-embed-div-11162279745921044'));\n",
+       "document.getElementById('observable-embed-div-16451503759226493').srcdoc = iframeSrc;\n",
+       "ObservableJupyterWrapper.listenToSize(document.getElementById('observable-embed-div-16451503759226493'));\n",
        "</script>\n",
        "    "
       ],
