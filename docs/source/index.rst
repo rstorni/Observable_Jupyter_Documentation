@@ -11,24 +11,7 @@ Observable-Jupyter is a Python library that allows individuals to quickly create
 data visualizations.
 
 .. Note::
-   Never heard of Observable? Read the :doc:`Understanding_the_Observable_in_OJ` section to learn more.
-
-Observable-Jupyter at a Glance
-==============================
-
-.. card::
-
-   Why Observable-Jupyter?
-   ^^^
-
-   **Observable for the Python Community**
-	Gives Python users access to Observable's vast archives of community built data visualizations
-
-   **Works without JavaScript**
-	Although Observable uses JavaScript, JavaScript is not required for any of Observable-Jupyter's “essential” functionality.
-
-   **Configurable**
-	Visualizations can be configured using Python.	
+   Never heard of Observable? Read the :doc:`Understanding_the_Observable_in_OJ` section to learn more.	
 
 Getting Started
 ===============
@@ -52,6 +35,23 @@ Get started by checking out our most popular visualizations:
 
    .. Note::
       Find More Visualizations on the :doc:`Visualization_Library` section.
+
+Observable-Jupyter at a Glance
+==============================
+
+.. card::
+
+   Why Observable-Jupyter?
+   ^^^
+
+   **Observable for the Python Community**
+        Gives Python users access to Observable's vast archives of community built data visualizations
+
+   **Works without JavaScript**
+        Although Observable uses JavaScript, JavaScript is not required for any of Observable-Jupyter's “essential” functionality.
+
+   **Configurable**
+        Visualizations can be configured using Python.
 
 .. toctree::
    :maxdepth: 1
