@@ -10,6 +10,6 @@ Special thanks to:
 
 * Thomas Ballinger
 
-* Proffesor Phillip Bogden
+* Professor Philip Bogden
 
 
