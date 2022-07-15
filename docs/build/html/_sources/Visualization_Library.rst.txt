@@ -63,3 +63,4 @@ Your standard Analysis tools such as bar charts, scatter plots, histograms and m
    Linear_Regression
    Variable_Regression
    Faceting_Linear_Regression
+   Summary_Table

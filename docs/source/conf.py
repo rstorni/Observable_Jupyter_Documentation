@@ -68,6 +68,7 @@ nbsphinx_thumbnails = {
 	'Faceting_Linear_Regression': 'Images/Thumbnails/Faceting_Linear_Regression.png',
 	'Scatter_Plot_Scrub': 'Images/Thumbnails/Scrub_Filter_ScaterPlot.png',
 	'Brushable_scatterplot': 'Images/Thumbnails/Brushable_ScatterPlot_Matrix.png',
-	'Scatterplot_Matrix': 'Images/Thumbnails/ScatterPlot_Matrix.png'
+	'Scatterplot_Matrix': 'Images/Thumbnails/ScatterPlot_Matrix.png',
+	'Summary_Table': 'Images/Thumbnails/Summary_Table.png'
 	}
 
