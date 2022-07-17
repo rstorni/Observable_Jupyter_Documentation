@@ -34,6 +34,7 @@ have to offer.
    Scatter_Plot_Scrub
    Interactive_Map
    Brushable_scatterplot
+   PixelValue_Intensity_Histogram
 
 Maps
 ----

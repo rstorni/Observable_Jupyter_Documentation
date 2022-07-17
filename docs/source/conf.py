@@ -69,6 +69,7 @@ nbsphinx_thumbnails = {
 	'Scatter_Plot_Scrub': 'Images/Thumbnails/Scrub_Filter_ScaterPlot.png',
 	'Brushable_scatterplot': 'Images/Thumbnails/Brushable_ScatterPlot_Matrix.png',
 	'Scatterplot_Matrix': 'Images/Thumbnails/ScatterPlot_Matrix.png',
-	'Summary_Table': 'Images/Thumbnails/Summary_Table.png'
+	'Summary_Table': 'Images/Thumbnails/Summary_Table.png',
+	'PixelValue_Intensity_Histogram': 'Images/Thumbnails/PixelValue_Intensity_Histogram.png'
 	}
 
